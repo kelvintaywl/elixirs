@@ -1,4 +1,7 @@
 defmodule Temperature do
+  @moduledoc """
+  Documentation for Temperature.
+  """
 
   def celsiusToFahrenheit(celsius) do
     (celsius * 1.8) + 32
@@ -24,11 +27,10 @@ defmodule Temperature do
   end
 
   def prettyPrint(celsius, :celsius) do
-    IO.puts("#{celsius} °C")
+    "#{celsius} °C"
   end
 
   def prettyPrint(fahrenheit, :fahrenheit) do
-    IO.puts("#{fahrenheit} °F")
+    "#{fahrenheit} °F"
   end
-
 end
