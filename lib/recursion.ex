@@ -16,7 +16,7 @@ defmodule Recursion do
 
   # note(kelvin): base case to grab the last item in list:
   # when there is only one item in the list, we simply return it
-  def pop([head | []]) do
+  def pop([head]) do
     head
   end
 
@@ -25,12 +25,12 @@ defmodule Recursion do
     pop(tail)
   end
 
-  def sort(lst, :merge) do
-    mergeSort(lst)
-  end
-
   def mergeSort([]) do
     []
+  end
+
+  def sort(lst, :merge) do
+    mergeSort(lst)
   end
 
   def mergeSort([a]) do
