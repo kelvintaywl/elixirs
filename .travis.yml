@@ -1,5 +1,7 @@
 sudo: false
 language: elixir
+env:
+  - MIX_ENV=test
 elixir:
   - 1.4.2
 script:
